@@ -10,7 +10,17 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+   # respond_to do |format|
+      #@user.show(params[:id])
+        #format.html { redirect_to @micropost.content, notice: 'User Posts' }
+        #format.json { render :show, status: :ok, location: @micropost }
+     # else
+      #  format.html { render :edit }
+     #   format.json { render json: @user.errors, status: :unprocessable_entity }
+    #  end
+  # end
   end
+
 
   # GET /users/new
   def new

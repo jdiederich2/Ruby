@@ -10,7 +10,8 @@ class MicropostsController < ApplicationController
   # GET /microposts/1
   # GET /microposts/1.json
   def show
-    @micropost = Micropost.user_id
+    @micropost = User.find(params[:id])
+    
   end
 
   # GET /microposts/new
